@@ -11,7 +11,7 @@ contract ESCLocalization {
         messages[_code] = _msg;
     }
 
-    function emitMessage(byte _code) external {
+    function log(byte _code) external {
         emit StatusCode(_code, messages[_code]);
     }
 }
