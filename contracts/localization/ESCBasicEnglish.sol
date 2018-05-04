@@ -1,10 +1,8 @@
 pragma solidity ^0.4.23;
 
-import "../Status.sol";
+import "./ESCLocalizatin.sol";
 
-contract EnglishESC {
-  mapping(byte => string) public messages;
-
+contract EnglishESC is ESCLocalization {
   constructor() public {
     add(hex"00", "Failure");
     add(hex"01", "Success");
@@ -58,9 +56,5 @@ contract EnglishESC {
     add(hex"F5", "Off Chain Service Not Available");
 
     add(hex"FF", "Data Source is Off Chain (ie: no guarantees)");
-  }
-
-  function add(byte _code, string _msg) internal {
-    messages[_code] = _msg;
   }
 }
