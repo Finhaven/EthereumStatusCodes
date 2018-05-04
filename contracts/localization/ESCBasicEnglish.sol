@@ -1,6 +1,6 @@
 pragma solidity ^0.4.23;
 
-import "./ESCLocalizatin.sol";
+import "./ESCLocalization.sol";
 
 contract EnglishESC is ESCLocalization {
   constructor() public {
