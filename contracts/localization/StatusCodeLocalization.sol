@@ -2,7 +2,7 @@ pragma solidity ^0.4.23;
 
 import "../Status.sol";
 
-contract ESCLocalization {
+contract SttausCodeLocalization {
     mapping(byte => string) public messages;
 
     event StatusCode(byte indexed code, string indexed message);

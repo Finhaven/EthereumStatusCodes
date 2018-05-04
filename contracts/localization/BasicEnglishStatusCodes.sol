@@ -1,8 +1,8 @@
 pragma solidity ^0.4.23;
 
-import "./ESCLocalization.sol";
+import "./StatusCodeLocalization.sol";
 
-contract EnglishESC is ESCLocalization {
+contract BasicEnglishStatusCodes is StatusCodeLocalization {
   constructor() public {
     add(hex"00", "Failure");
     add(hex"01", "Success");
